@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "883f383e-85c4-488a-b0c1-5cfd5fa0e53f",
+		"name": "Coding Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1415897"
+	},
+	"item": [
+		{
+			"name": "UpdateName",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"George\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5127/Customers/12345",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5127",
+					"path": [
+						"Customers",
+						"12345"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Most-expensive",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5127/Products/most-expensive",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5127",
+					"path": [
+						"Products",
+						"most-expensive"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top Customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5127/Customers/top",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5127",
+					"path": [
+						"Customers",
+						"top"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
